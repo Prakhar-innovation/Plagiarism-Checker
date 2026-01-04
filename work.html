@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  How it Works|Plagiarism Checker</title>
+    <link rel="stylesheet" href="./css/work.css">
+</head>
+<body>
+    <header class="header">
+  <div class="header-container">
+    <h1>Plagiarism Checker</h1>
+
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="work.html">How It Works</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+    <section class="hero-content">
+        <h1>How Plagiarism Checker works?</h1>
+        <p>
+            Our Plagiarism Checker utilizes TF-IDF vectorization combined with cosine similarity to analyze text similarity effectively. Here's a brief overview of how it works:
+        </p>
+        <h2>1. TF-IDF Vectorization</h2>
+        <p>
+            TF-IDF (Term Frequency-Inverse Document Frequency) is a statistical measure used to evaluate the importance of a word in a document relative to a collection of documents (corpus). The process involves:
+        </p>
+        <ul>
+            <li><strong>Term Frequency (TF):</strong> This measures how frequently a term appears in a document. The more times a word appears, the higher its TF value.</li>
+            <li><strong>Inverse Document Frequency (IDF):</strong> This measures how important a term is across all documents in the corpus. Rare terms across documents get higher IDF values.</li>
+            <li><strong>Vectorization:</strong> Each document is transformed into a vector in a multi-dimensional space, where each dimension corresponds to a unique term from the corpus, weighted by its TF-IDF score.</li>
+        </ul>
+        <h2>2. Cosine Similarity</h2>   
+        <p>
+            Cosine similarity is a metric used to measure how similar two vectors are, regardless of their magnitude. It calculates the cosine of the angle between two vectors in a multi-dimensional space. The steps include:
+        </p>
+        <ul>
+            <li><strong>Vector Comparison:</strong> Once the documents are vectorized using TF-IDF, cosine similarity compares these vectors.</li>
+            <li><strong>Similarity Score:</strong> The cosine similarity score ranges from -1 to 1, where 1 indicates identical documents, 0 indicates no similarity, and -1 indicates completely opposite documents.</li>  
+        </ul>
+        <h2>3. Plagiarism Detection</h2>
+        <p>
+            By combining TF-IDF vectorization and cosine similarity, our Plagiarism Checker can effectively identify similarities between the user's text and reference documents. A high cosine similarity score suggests potential plagiarism, allowing users to take appropriate actions.
+        </p>
+        <p>
+            This method provides a robust and efficient way to detect text similarity, making it a valuable tool for educators, writers, and researchers.  
+        </p>
+    
+    </section>
+
+    <footer class ="footer">
+        <p>&copy; 2026 | Text Similarity & Plagiarism Checker.<br> All rights reserved.</p>
+</body>
+</html>

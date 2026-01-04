@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plagiarism Checker</title>
+
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+  
+  <header class="header">
+    <div class="header-container">
+      <h1>Plagiarism Checker</h1>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="work.html">How It Works</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Text Similarity & Plagiarism Checker</h1>
+      <p>
+        Check your content for originality and similarity before you submit or publish.
+        Designed to help students, writers, and learners ensure their work is authentic
+        and confidently written.
+      </p>
+      <button id="tryNowBtn">Try Now</button>
+    </div>
+  </section>
+
+  
+  <main class="main">
+    <div class="container">
+
+      <h2 class="subtitle">What Is a Plagiarism Checker?</h2>
+
+      <p>
+        A plagiarism checker is a tool that helps identify similarity between written content
+        and reference material. It allows users to understand whether their text is original
+        or contains overlapping phrases and ideas that may require revision.
+      </p>
+
+      <p>
+        In academic, professional, and digital environments, originality is essential.
+        Submitting work without checking similarity can sometimes lead to unintentional
+        plagiarism. This tool helps users avoid such situations by providing clarity
+        before final submission.
+      </p>
+
+      <h3>Why Plagiarism Checking Is Necessary</h3>
+
+      <p>
+        Plagiarism does not always happen deliberately. While researching or drafting,
+        writers may unintentionally reuse sentence structures or ideas they have encountered.
+        A plagiarism checker helps identify these overlaps early.
+      </p>
+
+      <p>
+        By reviewing similarity beforehand, users can revise their content, improve clarity,
+        and ensure ethical writing practices. This is especially important in educational
+        institutions and professional environments.
+      </p>
+
+      <h3>Who Can Use This Tool</h3>
+
+      <ul>
+        <li>Students checking assignments, reports, and project submissions</li>
+        <li>Writers and bloggers reviewing drafts before publishing</li>
+        <li>Educators demonstrating content originality concepts</li>
+        <li>Developers and learners exploring text analysis tools</li>
+      </ul>
+
+      <h3>What This Tool Helps You Do</h3>
+
+      <p>
+        This plagiarism checker compares your text with selected reference sources
+        and provides a similarity overview. Instead of a simple yes-or-no result,
+        it offers insight into similarity levels so you can decide whether revisions
+        are needed.
+      </p>
+
+      <p>
+        The goal is to support learning and improvement, not punishment.
+        Users are encouraged to refine their writing and strengthen originality.
+      </p>
+
+      <h3>Privacy and Responsible Use</h3>
+
+      <p>
+        User privacy is respected throughout the process. Text entered into the system
+        is used only for analysis and is not stored permanently. This allows users to
+        experiment, revise, and improve their work confidently.
+      </p>
+
+      <p>
+        Originality remains the responsibility of the author. This tool serves as a
+        supportive assistant in achieving that goal.
+      </p>
+
+      <h3>A Step Toward Better Writing</h3>
+
+      <p>
+        Plagiarism checking is not just about avoiding penalties—it is about improving
+        the quality of writing. Understanding similarity helps users enhance expression,
+        paraphrase effectively, and submit work with confidence.
+      </p>
+
+    </div>
+  </main>
+
+  
+  <main class="main hidden" id="checkerSection">
+    <div class="container">
+
+      <h2>Plagiarism Checker</h2>
+      <p class="subtitle">Analyze text similarity and originality</p>
+
+      <div class="section">
+        <label>User Text</label>
+        <textarea id="userText" placeholder="Paste your text here..."></textarea>
+      </div>
+
+      <div class="mode">
+        <label>
+          <input type="radio" name="mode" value="manual" checked />
+          Manual Reference
+        </label>
+        <label>
+          <input type="radio" name="mode" value="corpus" />
+          Corpus / API Reference
+        </label>
+      </div>
+
+      <div class="section" id="referenceSection">
+        <label>Reference Text</label>
+        <textarea id="referenceText" placeholder="Paste reference text here..."></textarea>
+      </div>
+
+      <button id="checkBtn">Check Similarity</button>
+
+      <div class="result" id="resultBox">
+        <h3>Result</h3>
+        <p id="similarityValue">Similarity: —</p>
+        <p id="riskLevel">Risk Level: —</p>
+        <p id="matchedSource"></p>
+      </div>
+
+    </div>
+  </main>
+
+  
+  <footer class="footer">
+    <p>
+      © 2026 | Text Similarity & Plagiarism Checker <br>
+      Built to support originality and responsible writing
+    </p>
+  </footer>
+
+  <script src="./js/preprocess.js"></script>
+  <script src="./js/tfidf.js"></script>
+  <script src="./js/similarity.js"></script>
+  <script src="./js/app.js"></script>
+
+</body>
+</html>
