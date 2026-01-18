@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plagiarism Checker</title>
+
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+  
+  <header class="header">
+    <div class="header-container">
+      <h1>Plagiarism Checker</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="work.html">How It Works</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Text Similarity & Plagiarism Checker</h1>
+      <p>
+        Check your content for originality and similarity before submission.
+        Designed for students, writers, and researchers.
+      </p>
+      <button onclick="scrollToChecker()">Try Now</button>
+    </div>
+  </section>
+
+  
+  <main class="main" id="checker">
+    <div class="container">
+
+      <h2>Plagiarism Checker Tool</h2>
+      <p class="subtitle">
+        Compare text similarity using statistical and linguistic techniques
+      </p>
+
+      
+      <div class="section">
+        <label for="userText">Your Text</label>
+        <textarea id="userText" placeholder="Paste your text here..."></textarea>
+      </div>
+
+      
+      <div class="mode">
+        <label>
+          <input type="radio" name="mode" checked />
+          Manual Reference
+        </label>
+        <label>
+          <input type="radio" name="mode" />
+          Corpus / API Reference
+        </label>
+      </div>
+
+     
+      <div class="section">
+        <label for="referenceText">Reference Text</label>
+        <textarea id="referenceText" placeholder="Paste reference text here..."></textarea>
+      </div>
+
+      
+      <button id="checkBtn">Check Similarity</button>
+
+      
+      <div class="result hidden" id="resultBox">
+        <h3>Result</h3>
+        <p><strong>Similarity:</strong> <span id="similarityValue">—</span></p>
+        <p><strong>Risk Level:</strong> <span id="riskLevel">—</span></p>
+      </div>
+
+    </div>
+  </main>
+
+  
+  <footer class="footer">
+    <p>
+      © 2026 | Text Similarity & Plagiarism Checker <br />
+      Built for learning & academic integrity
+    </p>
+  </footer>
+
+ 
+  <script>
+    function scrollToChecker() {
+      document.getElementById("checker").scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+
+ <script src="./js/preprocess.js"></script>
+  <script src="./js/tfidf.js"></script>
+  <script src="./js/similarity.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
